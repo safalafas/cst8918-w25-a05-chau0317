@@ -2,17 +2,22 @@
 .boto
 .cache
 *.code-workspace
+
 #  may contain gcloud files
 .config
 .gitconfig
 .local
+
 # .netrc contains secrets for service tokens
 .netrc
 *.plan
 .sentinel
+
 # .ssh dir may contain private keys
+*.pub
 .ssh
 .terrascan
+
 # Terraform dot files
 .terraform
 .terraformrc
@@ -20,5 +25,8 @@
 .terraform.d
 *.tfstate
 *.tfstate.*
+*.terraform.lock.hcl
+
+# Browser generated files
 .vscode
 .idea
